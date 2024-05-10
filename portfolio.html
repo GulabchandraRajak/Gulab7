@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fortfolio">portfolio</a></li>
+                    <li><a href="#contact">Contant</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Gulabchandra</span><br> Rajak From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eaque dolorum error modi unde at, distinctio dicta exercitationem, beatae expedita odit consequuntur nulla ratione earum nemo ipsa eligendi. Quam, dolore!
+                    Quae repellendus deleniti officia blanditiis est vitae qui recusandae</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Learn Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design Training at Apna College</li>
+                            <li><span>2021 - 2023</span><br>Team lead at StartApp LLC.</li>
+                            <li><span>2021 - 2024</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>UI/UX Design Training at Apna College</li>
+                            <li><span>2024 - Complete</span><br>BCA from S.B.P.G</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, harum officiis doloremque a pariatur, expedita eligendi minima nobis velit dolorum quisquam temporibus! quaerat deleniti quisquam impedit?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, harum officiis doloremque a pariatur, expedita eligendi minima nobis velit dolorum quisquam temporibus! quaerat deleniti quisquam impedit?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, harum officiis doloremque a pariatur, expedita eligendi minima nobis velit dolorum quisquam temporibus! quaerat deleniti quisquam impedit?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Portfolio-------------------- -->
+    <div id="fortfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Dounload it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Dounload it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Dounload it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------Content----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> grajak2001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i> 7518894989</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/gulab_resume_data entry.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Gulabchandra. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwl8zwOBYXKimuOgPFp-wFLOB2wmgdG2thGwvvYCoxMQKRfR5FPsDhatGNTuV23h5MkvQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
